@@ -1,0 +1,82 @@
+Styling the Navbar /
+.navbar {
+    background-color: #f8f9fa; / Light grey background /
+    border-bottom: 2px solid #e0e0e0; / Add border at bottom /
+}
+
+/ Navbar Brand /
+.navbar-brand {
+    color: #343a40; / Dark grey color /
+    font-size: 1.5rem; / Larger text /
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/ Navbar Links /
+.navbar-nav .nav-link {
+    color: #007bff; / Bootstrap primary color /
+    font-size: 1.1rem; / Slightly larger text /
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3; / Darker blue on hover /
+    background-color: #e9ecef; / Light background on hover /
+    border-radius: 5px; / Add rounded corners /
+}
+
+/ Active Link Styling /
+.navbar-nav .nav-link.active {
+    color: #28a745; / Green color for active links */
+    font-weight: bold;
+}
+Disabled Link /
+.navbar-nav .nav-link.disabled {
+    color: #6c757d; / Grey color for disabled links /
+    cursor: not-allowed;
+}
+
+/ Dropdown Menu /
+.navbar-nav .dropdown-menu {
+    background-color: #ffffff; / White background /
+    border: 1px solid #e0e0e0; / Light grey border /
+}
+
+.dropdown-menu .dropdown-item {
+    color: #343a40; / Dark grey text /
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; / Blue hover /
+    color: #ffffff; / White text on hover /
+}
+
+/ Search Bar /
+.form-control {
+    width: 200px;
+    transition: width 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    width: 250px; / Increase width on focus /
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/ Toggler Button */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
