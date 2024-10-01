@@ -1,165 +1,128 @@
-   body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        .navbar {
-            background-color: #001F3F;
-            overflow: hidden;
-        }
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
 
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
 
-        .navbar a:hover {
-            background-color: blue;
-        }
+.navbar a:hover {
+    background-color: #575757;
+}
 
-        .navbar a.active {
-            background-color: #04AA6D;
-        }
+.navbar a.active {
+    background-color: #04AA6D;
+}
 
-        .container {
-            padding: 20px;
-        }
+/* Container for Page Content */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-  footer {
-      background-color: lightgreen;
-      color: white;
-      padding: 20px 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-  }
+/* Headings */
+h1 {
+    color: #04AA6D;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-  .footer-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-  }
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
 
-  .footer-left {
-      text-align: left;
-  }
+/* Text Styling */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
-  .footer-left p {
-      margin: 0;
-      padding: 5px 0;
-  }
+/* Contact Information Styling */
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .footer-left a {
-      color: #aaa;
-      text-decoration: none;
-  }
+.contact-info p {
+    margin: 5px 0;
+}
 
-  .footer-left a:hover {
-      text-decoration: underline;
-  }
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
 
-  .footer-right {
-      text-align: right;
-  }
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
-  .footer-right a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-  }
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-  .footer-right a:hover {
-      color: #04AA6D;
-  }
+form input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
 
-  @media (max-width: 768px) {
-      .footer-container {
-          flex-direction: column;
-      }
+form input[type="submit"]:hover {
+    background-color: #03895B;
+}
 
-      .footer-left, .footer-right {
-          text-align: center;
-          margin: 10px 0;
-      }
-  }
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+footer p {
+    margin: 0;
+}
 
-        .navbar {
-            background-color: lightblue;
-            overflow: hidden;
-        }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: blue;
-        }
-
-        .navbar a.active {
-            background-color: #04AA6D;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            color: #04AA6D;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .mission, .team, .values {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .team img {
-            border-radius: 50%;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
-        footer {
-            background-color: green;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-        }
+    .contact-info, form {
+        margin: 10px;
+    }
+}

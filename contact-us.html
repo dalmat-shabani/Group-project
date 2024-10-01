@@ -7,6 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="pc-parts.html">PC Parts</a>
+        <a href="about-us.html">About Us</a>
+        <a class="active" href="contact-us.html">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Address:</strong>Kosovo</p>
+            <p><strong>Phone:</strong>+383 123 123</p>
+            <p><strong>Email:</strong>support@pcstore.com</p>
+        </div>
+
+        <form action="submit.form.php" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Messsage</label>
+            <input name="message" id="message" rows="5" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2024 PC Store. All Rights Reserved.</p>
+                <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a> |
+                <a href="https://www.twitter.com/yourpage" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com/yourpage" target="_blank">Instagram</a>
+            </div>
+        </div>
+      </footer>
+      
     
 </body>
 </html>
