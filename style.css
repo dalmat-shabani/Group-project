@@ -1,82 +1,165 @@
-Styling the Navbar /
-.navbar {
-    background-color: #f8f9fa; / Light grey background /
-    border-bottom: 2px solid #e0e0e0; / Add border at bottom /
-}
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-/ Navbar Brand /
-.navbar-brand {
-    color: #343a40; / Dark grey color /
-    font-size: 1.5rem; / Larger text /
-    font-weight: bold;
-    text-transform: uppercase;
-}
+        .navbar {
+            background-color: lightblue;
+            overflow: hidden;
+        }
 
-/ Navbar Links /
-.navbar-nav .nav-link {
-    color: #007bff; / Bootstrap primary color /
-    font-size: 1.1rem; / Slightly larger text /
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease-in-out;
-}
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
 
-.navbar-nav .nav-link:hover {
-    color: #0056b3; / Darker blue on hover /
-    background-color: #e9ecef; / Light background on hover /
-    border-radius: 5px; / Add rounded corners /
-}
+        .navbar a:hover {
+            background-color: blue;
+        }
 
-/ Active Link Styling /
-.navbar-nav .nav-link.active {
-    color: #28a745; / Green color for active links */
-    font-weight: bold;
-}
-Disabled Link /
-.navbar-nav .nav-link.disabled {
-    color: #6c757d; / Grey color for disabled links /
-    cursor: not-allowed;
-}
+        .navbar a.active {
+            background-color: #04AA6D;
+        }
 
-/ Dropdown Menu /
-.navbar-nav .dropdown-menu {
-    background-color: #ffffff; / White background /
-    border: 1px solid #e0e0e0; / Light grey border /
-}
+        .container {
+            padding: 20px;
+        }
 
-.dropdown-menu .dropdown-item {
-    color: #343a40; / Dark grey text /
-}
+  footer {
+      background-color: lightgreen;
+      color: white;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+  }
 
-.dropdown-menu .dropdown-item:hover {
-    background-color: #007bff; / Blue hover /
-    color: #ffffff; / White text on hover /
-}
+  .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
 
-/ Search Bar /
-.form-control {
-    width: 200px;
-    transition: width 0.3s ease-in-out;
-}
+  .footer-left {
+      text-align: left;
+  }
 
-.form-control:focus {
-    width: 250px; / Increase width on focus /
-}
+  .footer-left p {
+      margin: 0;
+      padding: 5px 0;
+  }
 
-.btn-outline-success {
-    color: #28a745;
-    border-color: #28a745;
-}
+  .footer-left a {
+      color: #aaa;
+      text-decoration: none;
+  }
 
-.btn-outline-success:hover {
-    background-color: #28a745;
-    color: #fff;
-}
+  .footer-left a:hover {
+      text-decoration: underline;
+  }
 
-/ Toggler Button */
-.navbar-toggler {
-    border: none;
-}
+  .footer-right {
+      text-align: right;
+  }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+  .footer-right a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+  }
+
+  .footer-right a:hover {
+      color: #04AA6D;
+  }
+
+  @media (max-width: 768px) {
+      .footer-container {
+          flex-direction: column;
+      }
+
+      .footer-left, .footer-right {
+          text-align: center;
+          margin: 10px 0;
+      }
+  }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: lightblue;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: blue;
+        }
+
+        .navbar a.active {
+            background-color: #04AA6D;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #04AA6D;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .mission, .team, .values {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .team img {
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        footer {
+            background-color: green;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
